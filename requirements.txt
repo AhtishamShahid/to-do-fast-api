@@ -4,3 +4,4 @@ sqlalchemy
 pydantic
 pylint
 httpx
+pytest-cov
