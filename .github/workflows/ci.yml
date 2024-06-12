@@ -70,7 +70,7 @@ jobs:
       - name: Run tests and collect coverage
         run: |
           source env/bin/activate
-          pytest --cov app ${{ env.CODECOV_ATS_TESTS }}
+          pytest --cov=. tests/
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4
         with:
