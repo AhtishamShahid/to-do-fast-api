@@ -6,7 +6,7 @@ from sqlalchemy import Column, Integer, String, Boolean
 from .database import Base
 
 
-class TodoItem(Base):
+class TodoItem(Base):  # pylint: disable=too-few-public-methods
     """
     Represents a Todo item.
     """

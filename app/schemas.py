@@ -17,7 +17,6 @@ class TodoCreate(TodoBase):
     """
     Schema for creating a new Todo item.
     """
-    pass
 
 
 class TodoUpdate(TodoBase):
@@ -34,7 +33,7 @@ class Todo(TodoBase):
     id: int
     completed: bool
 
-    class Config:
+    class Config:  # pylint: disable=too-few-public-methods
         """
         Config class for enabling ORM mode.
         """
